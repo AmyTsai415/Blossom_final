@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 設置文件編碼和頁面縮放 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/creditcard.css">
+    <!-- 頁面標題 -->
+    <title>信用卡付款</title>
+    <style>
+        /* 按鈕的 CSS */
+        .payment-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #eaabe5;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer; /* 添加游標類型 */
+        }
+
+        /* 按鈕的 hover 效果 */
+        .payment-button:hover {
+            background-color: #ecd1f1;
+        }
+    </style>
+</head>
+<body>
+    <!-- 付款資訊容器 -->
+    <div class="container">
+        <!-- 付款資訊標題 -->
+        <h1>付款資訊</h1>
+        <!-- 信用卡付款表單 -->
+        <form id="paymentForm" action="#" method="post">
+            <!-- 信用卡號碼輸入框 -->
+            <label for="card_number">信用卡號碼</label>
+            <input type="text" id="card_number" name="card_number" placeholder="輸入信用卡號碼" required>
+
+            <!-- 持卡人姓名輸入框 -->
+            <label for="card_name">持卡人姓名</label>
+            <input type="text" id="card_name" name="card_name" placeholder="輸入持卡人姓名" required>
+
+            <!-- 到期日選擇器 -->
+            <label for="expiry_date">到期日</label>
+            <input type="date" id="expiry_date" name="expiry_date" required>
+
+            <!-- CVV 輸入框 -->
+            <label for="cvv">CVV</label>
+            <input type="number" id="cvv" name="cvv" placeholder="輸入信用卡背面的三位數字" required>
+
+            <!-- 確認付款按鈕 (有改)-->
+            <button type="button" class="payment-button" onclick="processPayment()">確定付款</button>
+        </form>
+    </div>
+
+    <!-- 新加的 -->
+    <script>
+        function processPayment() {
+            // 可以在此處添加表單驗證和付款處理邏輯
+
+            // 顯示成功提示框
+            alert("付款成功！");
+
+            // 跳轉到記錄頁面
+            window.location.href = 'backstage.html';
+        }
+    </script>
+</body>
+</html>

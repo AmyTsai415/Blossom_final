@@ -1,0 +1,123 @@
+/* 整體樣式設定 */
+body {
+    font-family: Arial, sans-serif;
+    /* 使用Arial字體 */
+    margin: 0;
+    /* 移除邊距 */
+    padding: 0;
+    /* 移除內邊距 */
+    background-color: #eadaec;
+    /* 背景顏色 */
+}
+
+/* 容器樣式 */
+.container {
+    max-width: 400px;
+    /* 最大寬度 */
+    margin: 30px auto;
+    /* 上下 20 像素，左右自動置中 */
+    padding: 30px;
+    /* 內邊距 */
+    background-color: #fff;
+    /* 背景顏色 */
+    border-radius: 5px;
+    /* 圓角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* 陰影 */
+}
+
+/* 標題樣式 */
+h1 {
+    text-align: center;
+    /* 文字置中 */
+    color: #bd99c5;
+    /* 文字顏色 */
+}
+
+/* 標籤樣式 */
+label {
+    display: block;
+    /* 块級元素 */
+    margin-bottom: 5px;
+    /* 底部外邊距 */
+}
+
+/* 輸入框樣式 */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    /* 寬度100% */
+    padding: 10px;
+    /* 內邊距 */
+    margin-bottom: 15px;
+    /* 底部外邊距 */
+    border: 1px solid #ccc;
+    /* 邊框 */
+    border-radius: 5px;
+    /* 圓角 */
+    box-sizing: border-box;
+    /* 盒模型 */
+}
+
+/* 提交按鈕樣式 */
+input[type="submit"] {
+    background-color: #bb91bf;
+    /* 背景顏色 */
+    color: #fff;
+    /* 文字顏色 */
+    padding: 10px 20px;
+    /* 內邊距 */
+    border: none;
+    /* 移除邊框 */
+    border-radius: 5px;
+    /* 圓角 */
+    cursor: pointer;
+    /* 指針 */
+}
+
+button {
+    color:white;
+    width: auto;
+    /* 自動寬度 */
+    padding: 10px;
+    /* 內邊距 */
+    margin-bottom: 10px;
+    /* 底部外邊距 */
+    border-radius: 10px;
+    /* 圓角 */
+    border: 1px solid #f7f5f5;
+    /* 邊框 */
+    background-color:#ef97b2;
+    /* 按鈕背景顏色 */
+}
+
+button:hover {
+    background-color: rgb(249, 231, 253);
+    /* 滑鼠懸停時的背景顏色 */
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    select {
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"],
+    button {
+        width: 100%;
+    }
+}

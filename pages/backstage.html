@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../assets/css/backstage.css">
+<script src="../assets/JS/backstage.js"></script>
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onmouseover="backstage(event, 'data')">資料變更</button>
+  <button class="tablinks" onmouseover="backstage(event, 'record')">消費紀錄</button>
+  <button class="tablinks" onmouseover="backstage(event, 'review')">歷史評論</button>
+  <button class="tablinks" onclick="goToHomepage()">回首頁</button>
+</div>
+
+
+<div id="data" class="tabcontent">
+
+    <div class="form_right">
+        <img src="../assets/images/IMG_3615.jpg">
+      <div class="form_div">
+        
+        <label for="username">使用者姓名：</label>
+        <input type="text" id="username" name="username">
+      </div>
+      <div class="form_div">
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="form_div">
+        <label for="password">密碼：</label>
+        <input type="password" id="password" name="password">
+      </div>
+      <div class="form_div">
+        <label for="phone">手機號碼(選填)：</label>
+        <input type="tel" id="phone" name="phone" maxlength="10">
+      </div>
+      <div class="form_div">
+        <label for="address">地址(選填)：</label>
+        <input type="text" id="address" name="address">
+      </div>
+      <div class="form_div">
+        <label for="birthday">生日(選填)：</label>
+        <input type="date" id="birthday" name="birthday">
+      </div>
+      <div>
+        <button type="submit" class="btn btn-success">
+            確認修改
+        </button>
+        <button class="btn btn-secondary" onclick="reloadPage()">
+            取消
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="record" class="tabcontent">
+    <div class="transaction-history">
+      <div class="transaction-item">
+        <p>訂單編號: #1</p>
+
+        <div class="transaction-date">2024-05-01</div>
+        <div class="transaction-details">
+          <div class="transaction-description">粉夢鬱金香
+            <p>數量: 3</p>
+            <p>單價: $299</p>
+          </div>
+          <div class="transaction-amount">$897</div>
+        </div>
+      </div>
+      <div class="transaction-item">
+        <p>訂單編號: #2</p>
+        <div class="transaction-date">2024-04-28</div>
+        <div class="transaction-details">
+          <div class="transaction-description">純淨之愛花園
+            <p>數量: 2</p>
+            <p>單價: $299</p>
+          </div>
+          <div class="transaction-amount">$598</div>
+        </div>
+      </div>
+      <!-- 其他消費紀錄項目 -->
+    </div>
+  </div>
+  
+  <div id="review" class="tabcontent">
+    <div class="review-history">
+      <div class="review-item">
+        <div class="review-details">
+          <div class="review-title">訂單編號: #1</div>
+          <p>評分: 4.5 / 5</p>
+          <p>評論: 我在你們的網站上訂購了花送給我的朋友，她非常喜歡！</p>
+        </div>
+        <div class="review-date">2024-05-01</div>
+      </div>
+      <div class="review-item">
+        <div class="review-details">
+          <div class="review-title">訂單編號: #2</div>
+          <p>評分: 4.0 / 5</p>
+          <p>評論: 我對你們的服務感到非常滿意。花束包裝得很精美，讓我感到很驚喜。</p>
+        </div>
+        <div class="review-date">2024-04-28</div>
+      </div>
+      <!-- 其他歷史評論項目 -->
+    </div>
+  </div>
+  
+
+<div class="tabcontent">
+    <h3><a href="../index.html">回首頁</a></h3>
+</div>
+
+<div class="clearfix"></div>
+
+
+   
+</body>
+</html> 

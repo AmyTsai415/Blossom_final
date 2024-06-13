@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 設置文件編碼和頁面縮放 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 頁面標題 -->
+    <title>會員註冊</title>
+    <!-- 引入外部樣式表 -->
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <!-- 引入外部 JavaScript 文件 -->
+    <script src="../assets/JS/register.js"></script>
+</head>
+<body>
+    <!-- 註冊表單容器 -->
+    <div class="container">
+        <!-- 註冊圖片 -->
+        <img src="../assets/images/register.JPG" alt="Avatar" class="avatar">
+        <!-- 帳號輸入框 -->
+        <input type="text" placeholder="帳號" id="username"><br>
+        <!-- 密碼輸入框 -->
+        <input type="password" placeholder="密碼" id="password"><br>
+        <!-- 確認密碼輸入框 -->
+        <input type="password" placeholder="確認密碼" id="confirmPassword"><br>
+        <!-- 註冊按鈕 -->
+        <button onclick="register()">註冊</button>
+    </div>
+    <form id="registerForm" action="/register" method="post">
+</body>
+</html>

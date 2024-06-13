@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh"> <!-- 設置語言為繁體中文 -->
+
+<head>
+    <link rel="stylesheet" href="../assets/css/goods.css"> <!-- 引入外部樣式表 -->
+    <meta charset="UTF-8"> <!-- 設置文件編碼 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 設置頁面縮放 -->
+    <title>商品介面</title> <!-- 頁面標題 -->
+</head>
+
+<body>
+    <div class="header">
+        <h1>Blossom</h1>
+        <p>歡迎您來 Blossom，讓我們為您的生活增添一抹花香，一份溫暖，一份浪漫。</p> <!-- 網站頭部 -->
+    </div>
+  
+    <div class="topnav">
+        <!-- 頁面導航欄 -->
+        <a href="goods1.html">乾燥花束</a>
+        <a href="goods.html">鮮花花束</a>
+        <a href="goods2.html">鐘罩花</a>
+        <a href="login.html" style="float:right">登入/註冊</a>
+        <a href="shoppingcart.html" style="float:right">購物車</a>
+        <a href="aboutus.html" style="float:right">關於我們</a>
+        <a href="../index.html" style="float:right">回首頁</a>
+        <!-- 商品搜尋表單 -->
+        <form class="search-form" action="/search" method="get">
+            <input type="text" placeholder="尋找商品..." name="search">
+            <button type="submit">搜尋</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <!-- 商品展示區域 -->
+        <div class="row">
+            <!-- 商品1 -->
+            <div class="product">
+                <h2>粉夢鬱金香</h2>
+                <img src="../assets/images/IMG_3528.jpg">
+                <p>商品描述:</p>
+                <br>這些粉色鬱金香如夢如幻，綻放著溫柔的浪漫氛圍。
+                <p>價格: $299</p>
+                <p>庫存數量: 50</p>
+                <a href="shoppingcart.html" class="btn">加入購物車</a>
+                <a href="flower1.html">商品評價</a>
+            </div>
+            <!-- 商品2 -->
+            <div class="product">
+                <h2>純愛之白</h2>
+                <img src="../assets/images/IMG_3529.jpg">
+                <p>商品描述:</p>
+                <br>象徵著純潔和無私的愛情，為你帶來一束永恆的愛的寓意。
+                <p>價格: $790</p>
+                <p>庫存數量: 30</p>
+                <a href="shoppingcart.html" class="btn">加入購物車</a>
+                <a href="flower2.html">商品評價</a>
+            </div>
+            <!-- 商品3 -->
+            <div class="product">
+                <h2>粉色柔情玫瑰</h2>
+                <img src="../assets/images/IMG_3530.jpg" >
+                <p>商品描述:</p>
+                <br>色澤柔和，花瓣如絲般柔軟，帶給你溫暖和甜蜜的感受。
+                <p>價格: $590</p>
+                <p>庫存數量: 40</p>
+                <a href="shoppingcart.html" class="btn">加入購物車</a>
+                <a href="flower3.html">商品評價</a>
+            </div>
+        </div>
+    </div>
+    <!-- 返回首頁按鈕 -->
+    <a href="../index.html">
+        <input type="submit" value="回首頁" id="button" class="bt">
+    </a>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 設定文件編碼和頁面縮放 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 頁面標題 -->
+    <title>會員登入</title>
+    <!-- 引入外部樣式表 -->
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <!-- 引入外部 JavaScript 文件 -->
+    <script src="../assets/JS/login.js"></script>
+</head>
+<body>
+    <!-- 登入表單容器 -->
+    <div class="container">
+        <!-- 登入圖片 -->
+        <img src="../assets/images/login.JPG" alt="Avatar" class="avatar">
+        <!-- 帳號輸入框 -->
+        <input type="text" placeholder="帳號" id="username">
+        <!-- 密碼輸入框 -->
+        <input type="password" placeholder="密碼" id="password">
+        <!-- 登入按鈕 -->
+        <button onclick="login()">登入</button>
+        <!-- 註冊選項 -->
+        <div class="register-option">
+            還沒有帳號？ <a href="register.html">註冊</a>
+        </div>
+    </div>
+    <form id="loginForm" action="/login" method="post">
+</body>
+</html>

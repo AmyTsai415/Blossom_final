@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 設置文件編碼和頁面縮放 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入外部樣式表 -->
+    <link rel="stylesheet" href="../assets/css/pay.css">
+    <!-- 頁面標題 -->
+    <title>付款介面</title>
+</head>
+<body>
+
+    <!-- 付款介面標題 -->
+    <div class="title">
+        <h1>付款介面</h1>
+    </div>
+    
+    <!-- 付款表單容器 -->
+    <div class="card">
+        
+        <form action="payment.html" method="post">
+            <!-- 聯絡資訊 -->
+            <h3><b>聯絡資訊</b></h3><br>
+            <div>
+                <!-- 姓名欄位 -->
+                <div class="col-md-6">
+                    <label for="first-name">姓氏</label>
+                    <input  type="text"  id="inputfirstname" placeholder="姓氏" required>
+                    <label for="last-name">名字</label>
+                    <input  type="text" id="inputSecondname" placeholder="名字" required>
+                </div>
+                    
+                <!-- 郵遞區號和城市選擇 -->
+                <div class="col-md-6">
+                    <label for="inputPostal">郵遞區號</label>
+                    <input type="text"  id="inputPostal" placeholder="郵遞區號" maxlength="3" required>
+                    <select id="inputState" class="form-select">
+                        <option value="">城市</option>
+                        <option value="基隆市">基隆市</option>
+                        <option value="台北市">台北市</option>
+                        <option value="新北市">新北市</option>
+                        <option value="桃園市">桃園市</option>
+                        <option value="新竹市">新竹市</option>
+                        <option value="新竹縣">新竹縣</option>
+                        <option value="苗栗縣">苗栗縣</option>
+                        <option value="台中市">台中市</option>
+                        <option value="彰化縣">彰化縣</option>
+                        <option value="南投縣">南投縣</option>
+                        <option value="雲林縣">雲林縣</option>
+                        <option value="嘉義市">嘉義市</option>
+                        <option value="嘉義縣">嘉義縣</option>
+                        <option value="台南市">台南市</option>
+                        <option value="高雄市">高雄市</option>
+                        <option value="屏東縣">屏東縣</option>
+                        <option value="台東縣">台東縣</option>
+                        <option value="花蓮縣">花蓮縣</option>
+                        <option value="宜蘭縣">宜蘭縣</option>
+                        <option value="澎湖縣">澎湖縣</option>
+                        <option value="金門縣">金門縣</option>
+                        <option value="連江縣">連江縣</option>
+
+                    </select>
+                </div>
+                
+                <!-- 詳細地址欄位 -->
+                <div class="col-md-6">
+                    <label for="Address">詳細地址</label>
+                    <input type="text" class="form-control" id="Address" placeholder="詳細地址" required>
+                </div>
+                
+                <!-- 手機號碼欄位 -->
+                <div class="col-md-6">
+                    <label for="inputPostal">手機號碼</label>
+                    <select id="inputState" class="form-select">
+                        <option value="">+886</option>
+                        <!-- 其他國家的國碼選項 -->
+                    </select>
+                    <input type="text"  id="inputPhoneNumber" placeholder="手機號碼" maxlength="10" required>
+                </div>
+                
+
+                <div>
+                    <button onclick="window.location.href = 'payment.html';" style="float: center;">輸入付款資料</button>
+                </div>     
+            </div>
+        </form>
+    </div>
+</body>
+</html>

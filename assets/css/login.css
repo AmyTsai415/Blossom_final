@@ -1,0 +1,90 @@
+body,
+html {
+    height: 100%;
+    /* 設定 body 和 html 的高度為 100% */
+    margin: 0;
+    /* 移除邊距 */
+    display: flex;
+    /* 使用彈性盒子 */
+    justify-content: center;
+    /* 水平置中 */
+    align-items: center;
+    /* 垂直置中 */
+}
+
+.container {
+    text-align: center;
+    /* 文字置中 */
+}
+
+.avatar {
+    width: 450px;
+    /* 圖片寬度 */
+    height: 450px;
+    /* 圖片高度 */
+    object-fit: contain;
+    /* 圖片保持比例，完全容納在圖片容器內 */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+button {
+    width: 80%;
+    /* 控制項寬度 */
+    padding: 10px;
+    /* 內邊距 */
+    margin-bottom: 10px;
+    /* 底部外邊距 */
+}
+
+button {
+    width: 200px;
+    /* 按鈕寬度 */
+    margin: 0 auto;
+    /* 自動水平置中 */
+    background-color: #f1acc2;
+    /* 按鈕背景顏色 */
+    color: white;
+    /* 文字顏色 */
+    border: none;
+    /* 移除邊框 */
+    border-radius: 8px;
+    /* 圓角 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* 陰影效果 */
+    padding: 10px 20px;
+    /* 內邊距 */
+    cursor: pointer;
+    /* 鼠標樣式 */
+}
+
+button:hover {
+    opacity: 0.8;
+    /* 滑鼠懸停時的不透明度 */
+}
+
+.register-option {
+    margin-top: 15px;
+    /* 上方外邊距 */
+}
+
+@media screen and (max-width: 768px) {
+    .avatar {
+        width: 300px;
+        height: 300px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="date"],
+    button {
+        width: 90%;
+    }
+
+    button {
+        width: 150px;
+    }
+}

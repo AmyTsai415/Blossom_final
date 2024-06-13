@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    /* 移除所有元素的內邊距 */
+    margin: 0;
+    /* 移除所有元素的外邊距 */
+}
+
+.title {
+    background-color: pink;
+    /* 標題背景顏色 */
+    color: white;
+    /* 文字顏色 */
+    text-align: center;
+    /* 文字置中 */
+    height: 50px;
+    /* 標題高度 */
+    padding: 20px;
+    /* 內邊距 */
+}
+
+.card {
+    background-color: rgb(241, 201, 207);
+    /* 卡片背景顏色 */
+    display: flex;
+    /* 使用彈性盒子 */
+    padding: 50px;
+    /* 內邊距 */
+    margin: 50px;
+    /* 外邊距 */
+    border-radius: 15px;
+    /* 圓角 */
+    justify-content: center;
+    /* 水平置中 */
+    opacity: 0.8;
+    /* 透明度 */
+
+
+}
+
+.col-md-6 {
+    padding: 5px;
+    /* 內邊距 */
+    justify-content: space-around;
+    /* 均勻分配空間 */
+    margin-bottom: 50px;
+    /* 底部外邊距 */
+
+}
+
+h3 {
+    text-align: center;
+    /* 文字置中 */
+    text-decoration: underline;
+    /* 底線 */
+}
+
+.form-control {
+    width: 80%;
+    /* 表單控制項寬度 */
+}
+
+button {
+    width: auto;
+    /* 自動寬度 */
+    padding: 10px;
+    /* 內邊距 */
+    margin-bottom: 10px;
+    /* 底部外邊距 */
+    border-radius: 10px;
+    /* 圓角 */
+    border: 1px solid #f7f5f5;
+    /* 邊框 */
+    background-color: rgb(231, 203, 245);
+    /* 按鈕背景顏色 */
+}
+
+button:hover {
+    background-color: rgb(249, 231, 253);
+    /* 滑鼠懸停時的背景顏色 */
+}
+
+.form-select {
+    width: 70px;
+    /* 選擇框寬度 */
+    border: 20px;
+    /* 邊框 */
+    border-radius: 10px;
+    /* 圓角 */
+
+}
+
+input[type="text"],
+select {
+    width: 190px;
+    /* 文本輸入框和選擇框寬度 */
+    padding: 5px;
+    /* 內邊距 */
+    margin-bottom: 5px;
+    /* 底部外邊距 */
+    border: 1px solid #f7f5f5;
+    /* 邊框 */
+    border-radius: 5px;
+    /* 圓角 */
+    box-sizing: border-box;
+    /* 內容框模型 */
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column; 
+        padding: 20px; 
+        margin: 20px; 
+    }
+
+    .form-control,
+    input[type="text"],
+    select {
+        width: 100%; 
+    }
+}

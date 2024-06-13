@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <!-- 引入外部樣式表 -->
+    <link rel="stylesheet" href="../assets/css/goods.css">
+    <!-- 設置文件編碼和頁面縮放 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 頁面標題 -->
+    <title>商品介面</title>
+</head>
+<body>
+    <!-- 頁面頭部 -->
+    <div class="header">
+        <h1>Blossom</h1>
+        <p>歡迎您來 Blossom，讓我們為您的生活增添一抹花香，一份溫暖，一份浪漫。</p>
+    </div>
+
+    <!-- 頁面導航欄 -->
+    <div class="topnav">
+        <a href="goods1.html">乾燥花束</a>
+        <a href="goods.html">鮮花花束</a>
+        <a href="goods2.html">鐘罩花</a>
+        <a href="login.html" style="float:right">登入/註冊</a>
+        <button onclick="showLogoutMessage()" class="nav-link" style="float:right">登出</button><!-- 新加的 -->
+        <a href="shoppingcart.html" style="float:right">購物車</a>
+        <a href="aboutus.html" style="float:right">關於我們</a>
+        <a href="../index.html" style="float:right">回首頁</a>
+        <!-- 商品搜尋表單 -->
+        <form class="search-form" action="/search" method="get">
+            <input type="text" placeholder="尋找商品..." name="search">
+            <button type="submit">搜尋</button>
+        </form>
+    </div>
+
+    <!-- 商品展示區域 -->
+    <div class="container">
+        <div class="row">
+            <!-- 商品1 -->
+            <div class="product">
+                <h2>粉紫夢幻之愛</h2>
+                <img src="../assets/images/IMG_3531.jpg">
+                <p>商品描述:</p>
+                <br>散發著令人陶醉的淡淡花香，象徵著浪漫的愛情之夢。
+                <p>價格: $490</p>
+                <p>庫存數量: 10</p>
+                <a href="shoppingcart.html" class="btn">加入購物車</a>
+                <a href="flower4.html">商品評價</a>
+            </div>
+            <!-- 商品2 -->
+            <div class="product">
+                <h2>炙熱戀情之花</h2>
+                <img src="../assets/images/IMG_3532.jpg" >
+                <p>商品描述:</p>
+                <br>熾熱的戀情氛圍，花朵散發出濃烈的愛情氣息，讓人心馳神往。
+                <p>價格: $390</p>
+                <p>庫存數量: 20</p>
+                <a href="shoppingcart.html" class="btn">加入購物車</a>
+                <a href="flower5.html">商品評價</a>
+            </div>
+            <!-- 商品3 -->
+            <div class="product">
+                <h2>純淨之愛花園</h2>
+                <img src="../assets/images/IMG_3533.jpg">
+                <p>商品描述:</p>
+                <br>結合了純淨和浪漫，猶如一個迷人的愛情花園，為你帶來純淨無暇的愛情寓意。
+                <p>價格: $299</p>
+                <p>庫存數量: 5</p>
+                <a href="shoppingcart.html" class="btn">加入購物車</a>
+                <a href="flower6.html">商品評價</a>
+            </div>
+        </div>
+    </div>
+    <!-- 返回首頁按鈕 -->
+    <a href="../index.html">
+        <input type="submit" value="回首頁" id="button" class="bt">
+    </a>
+</body>
+</html>

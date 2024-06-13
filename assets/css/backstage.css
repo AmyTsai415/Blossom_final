@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+    /* 盒模型 */
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    /* 字體 */
+}
+
+/* 標籤樣式 */
+.tab {
+    float: left;
+    /* 浮動在左側 */
+    background-color: #f1acc2;
+    /* 背景顏色 */
+    border: none;
+    /* 去除邊框 */
+    width: 15%;
+    /* 寬度 */
+    height: 1000px;
+    /* 高度 */
+}
+
+/* 標籤按鈕樣式 */
+.tab button {
+    display: block;
+    /* 塊級元素 */
+    background-color: inherit;
+    /* 繼承背景顏色 */
+    color: white;
+    /* 文字顏色 */
+    padding: 22px 16px;
+    /* 內邊距 */
+    width: 100%;
+    /* 寬度 */
+    border: none;
+    /* 去除邊框 */
+    outline: none;
+    /* 去除外框 */
+    text-align: left;
+    /* 文字左對齊 */
+    cursor: pointer;
+    /* 指標形狀 */
+    font-size: 17px;
+    /* 字體大小 */
+}
+
+/* 滑鼠懸停時按鈕的背景顏色 */
+.tab button:hover {
+    background-color: #ea5783;
+    /* 背景顏色 */
+}
+
+/* 建立活動/當前標籤按鈕的類別 */
+.tab button.active {
+    background-color: #ea5783;
+    /* 背景顏色 */
+}
+
+/* 標籤內容樣式 */
+.tabcontent {
+    float: left;
+    /* 浮動在左側 */
+    padding: 0px 12px;
+    /* 內邊距 */
+    width: 70%;
+    /* 寬度 */
+    border-left: none;
+    /* 左邊框 */
+    height: 300px;
+    /* 高度 */
+    display: none;
+    /* 隱藏 */
+}
+
+/* 清除標籤後的浮動 */
+.clearfix::after {
+    content: "";
+    clear: both;
+    /* 清除浮動 */
+    display: table;
+    /* 表格顯示 */
+}
+
+/* 表單容器樣式 */
+.form-container {
+    justify-content: center;
+    /* 內容水平置中 */
+    margin-top: 3%;
+    /* 上邊距 */
+    width: 100%;
+    /* 寬度 */
+    display: flex;
+    /* 彈性盒子佈局 */
+    align-items: center;
+    /* 內容垂直置中 */
+}
+
+/* 表單樣式 */
+.form {
+    justify-content: center;
+    /* 內容水平置中 */
+    background-color: white;
+
+    padding: 10px;
+    /* 內邊距 */
+    border-radius: 8px;
+    /* 圓角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* 陰影效果 */
+    width: 1000px;
+    /* 寬度 */
+    float: left;
+    /* 浮動在左側 */
+    box-sizing: border-box;
+    /* 盒模型 */
+    display: flex;
+    /* 彈性盒子佈局 */
+    height: auto;
+    /* 高度 */
+}
+
+/* 表單右側元素樣式 */
+.form_right input {
+    background-color: rgba(245, 222, 179, 0);
+    /* 背景顏色 */
+    border-top: none;
+    /* 上邊框 */
+    border-left: none;
+    /* 左邊框 */
+    border-right: none;
+    /* 右邊框 */
+    height: 40px;
+    /* 高度 */
+    max-width: 100%;
+    /* 最大寬度 */
+    width: 100%;
+    /* 寬度 */
+    margin-bottom: 3%;
+    /* 下邊距 */
+    box-sizing: border-box;
+    /* 盒模型 */
+    display: inline-block;
+    /* 行內塊元素 */
+}
+
+/* 表單右側容器樣式 */
+.form_right {
+    float: right;
+    /* 浮動在右側 */
+    display: flexbox;
+    /* 彈性盒子佈局 */
+    width: 80%;
+    /* 寬度 */
+}
+
+/* 表單容器樣式 */
+.form_div {
+    display: flex;
+    /* 彈性盒子佈局 */
+    color: #ea5783;
+    /* 文字顏色 */
+    font-style: bold;
+    /* 粗體 */
+}
+
+/* 表單標籤樣式 */
+.form_div label {
+    width: 200px !important;
+    /* 寬度 */
+    padding-top: 12px;
+    /* 上邊距 */
+}
+
+/* 圖片樣式 */
+img {
+    width: 400px;
+    /* 寬度 */
+    height: 300px;
+    /* 高度 */
+    margin-left: 212px;
+    /* 左邊距 */
+}
+
+/* 成功按鈕樣式 */
+.btn-success {
+    display: inline-block;
+    /* 行內塊元素 */
+    padding: 10px 10px;
+    /* 內邊距 */
+    background-color: #db98d0ef;
+    /* 背景顏色 */
+    color: #fff8e4;
+    /* 文字顏色 */
+    border: none;
+    /* 去除邊框 */
+    border-radius: 15%;
+    /* 圓角 */
+    margin-left: 370px;
+    /* 左邊距 */
+}
+
+/* 次要按鈕樣式 */
+.btn-secondary {
+    display: inline-block;
+    /* 行內塊元素 */
+    padding: 10px 10px;
+    /* 內邊距 */
+    background-color: #c89ff2ef;
+    /* 背景顏色 */
+    color: #fff8e4;
+    /* 文字顏色 */
+    border: none;
+    /* 去除邊框 */
+    border-radius: 20%;
+    /* 圓角 */
+    margin-left: 15px;
+    /* 左邊距 */
+}
+
+/* 消費紀錄容器 */
+.transaction-history {
+    border: 1px solid #ddd;
+    /* 邊框 */
+    border-radius: 5px;
+    /* 圓角 */
+    padding: 10px;
+    /* 內邊距 */
+}
+
+/* 每條消費紀錄項目 */
+.transaction-item {
+    border-bottom: 1px solid #ddd;
+    /* 底部邊框 */
+    padding: 10px 0;
+    /* 上下內邊距 */
+    font-weight: bold;
+    /* 粗體 */
+}
+
+/* 訂單編號和數量 */
+.transaction-item p {
+    margin: 5px 0;
+    /* 上下外邊距 */
+}
+
+/* 消費日期 */
+.transaction-date {
+    color: #333;
+    /* 文字顏色 */
+    margin-bottom: 5px;
+    /* 下邊距 */
+}
+
+/* 消費詳情 */
+.transaction-details {
+    display: flex;
+    /* 彈性盒子佈局 */
+    justify-content: space-between;
+    /* 在兩端分配空間 */
+}
+
+/* 消費描述 */
+.transaction-description {
+    flex: 1;
+    /* 彈性增長 */
+}
+
+/* 消費金額 */
+.transaction-amount {
+    font-weight: bold;
+    /* 粗體 */
+    color: #009900;
+    /* 文字顏色 */
+}
+
+/* 歷史評論容器 */
+.review-history {
+    border: 1px solid #ddd;
+    /* 邊框 */
+    border-radius: 5px;
+    /* 圓角 */
+    padding: 10px;
+    /* 內邊距 */
+}
+
+/* 每條歷史評論項目 */
+.review-item {
+    border-bottom: 1px solid #ddd;
+    /* 底部邊框 */
+    padding: 10px 0;
+    /* 上下內邊距 */
+}
+
+/* 評論日期 */
+.review-date {
+    font-weight: bold;
+    /* 粗體 */
+    color: #333;
+    /* 文字顏色 */
+    margin-bottom: 5px;
+    /* 下邊距 */
+}
+
+/* 評論詳情 */
+.review-details {
+    display: flex;
+    /* 彈性盒子佈局 */
+    justify-content: space-between;
+    /* 在兩端分配空間 */
+}
+
+/* 評論標題 */
+.review-title {
+    font-weight: bold;
+    /* 粗體 */
+}
+
+/* 評論內容 */
+.review-details p {
+    margin: 5px 0;
+    /* 上下外邊距 */
+}
+
+@media screen and (max-width: 768px) {
+    .tab {
+        width: 100%;
+        height: auto;
+    }
+
+    .tab button {
+        text-align: center;
+        width: 100%;
+    }
+
+    .tabcontent {
+        width: 100%;
+    }
+
+    .form_right {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .form {
+        width: 100%;
+        height: auto;
+    }
+
+    img {
+        width: 60%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .btn-success,
+    .btn-secondary {
+        width: 100%;
+        margin-left: 0;
+    }
+}

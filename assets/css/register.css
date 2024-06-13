@@ -1,0 +1,57 @@
+body,
+html {
+    height: 100%;
+    /* 設定高度為100%，讓內容在頁面垂直置中 */
+    margin: 0;
+    /* 移除預設的邊距 */
+    display: flex;
+    /* 使用彈性盒子 */
+    justify-content: center;
+    /* 水平置中 */
+    align-items: center;
+    /* 垂直置中 */
+}
+
+.container {
+    text-align: center;
+    /* 文字置中 */
+}
+
+.avatar {
+    width: 100px;
+    /* 圓形頭像寬度 */
+    height: 100px;
+    /* 圓形頭像高度 */
+    border-radius: 50%;
+    /* 設置圓形邊框 */
+    margin-bottom: 20px;
+    /* 底部間距 */
+}
+
+.container,
+button {
+    text-align: center;
+    /* 文字置中 */
+    width: 100%;
+    /* 設置寬度為100% */
+    padding: 10px;
+    /* 內邊距 */
+    margin-bottom: 10px;
+    /* 底部間距 */
+}
+
+button {
+    background-color: #4CAF50;
+    /* 按鈕背景顏色 */
+    color: white;
+    /* 文字顏色 */
+    border: none;
+    /* 移除邊框 */
+    cursor: pointer;
+    /* 指標樣式 */
+}
+
+button:hover {
+    opacity: 0.8;
+    /* 滑鼠懸停時降低透明度 */
+}

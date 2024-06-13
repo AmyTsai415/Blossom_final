@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <!-- 引入外部樣式表 -->
+    <link rel="stylesheet" href="../assets/css/goods.css">
+    <!-- 設置文件編碼和頁面縮放 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 頁面標題 -->
+    <title>商品介面</title>
+</head>
+<body>
+    <!-- 頁面頭部 -->
+    <div class="header">
+        <h1>Blossom</h1>
+        <p>歡迎您來 Blossom，讓我們為您的生活增添一抹花香，一份溫暖，一份浪漫。</p>
+    </div>
+
+    <!-- 頁面導航欄 -->
+    <div class="topnav">
+        <a href="goods1.html">乾燥花束</a>
+        <a href="goods.html">鮮花花束</a>
+        <a href="goods2.html">鐘罩花</a>
+        <a href="login.html" style="float:right">登入/註冊</a>
+        <button onclick="showLogoutMessage()" class="nav-link" style="float:right">登出</button><!-- 新加的 -->
+        <a href="shoppingcart.html" style="float:right">購物車</a>
+        <a href="aboutus.html" style="float:right">關於我們</a>
+        <a href="../index.html" style="float:right">回首頁</a>
+        <!-- 商品搜尋表單 -->
+        <form class="search-form" action="/search" method="get">
+            <input type="text" placeholder="尋找商品..." name="search">
+            <button type="submit">搜尋</button>
+        </form>
+    </div>
+
+    <!-- 商品展示區域 -->
+    <div class="container">
+        <div class="row">
+            <!-- 商品1 -->
+            <div class="product">
+                <h2>白色之愛花舞</h2>
+                <img src="../assets/images/IMG_3534.jpg">
+                <p>商品描述:</p>
+                <br>金邊白玫瑰音響散發著奢華的金色光芒，彷彿在舞動的花海中演奏著愛的樂章。
+                <p>價格: $490</p>
+                <p>庫存數量: 5</p>
+                <a href="shoppingcart.html" class="btn">加入購物車</a>
+                <a href="flower7.html">商品評價</a>
+            </div>
+            <!-- 商品2 -->
+            <div class="product">
+                <h2>深藍之夢花築</h2>
+                <img src="../assets/images/IMG_3535.jpg" >
+                <p>商品描述:</p>
+                <br>瑰猶如深藍色的夢境，帶著神秘和浪漫，為你營造一個迷人的花築之夢。
+                <p>價格: $390</p>
+                <p>庫存數量: 15</p>
+                <a href="shoppingcart.html" class="btn">加入購物車</a>
+                <a href="flower8.html">商品評價</a>
+            </div>
+            <!-- 商品3 -->
+            <div class="product">
+                <h2>摩天輪之戀花幻</h2>
+                <img src="../assets/images/IMG_3536.jpg">
+                <p>商品描述:</p>
+                <br>結合了藍色和粉色的浪漫色彩，帶你飛躍到愛情的高峰，享受一場真摯的戀愛幻想。
+                <p>價格: $299</p>
+                <p>庫存數量: 20</p>
+                <a href="shoppingcart.html" class="btn">加入購物車</a>
+                <a href="flower9.html">商品評價</a>
+            </div>
+        </div>
+    </div>
+    <!-- 返回首頁按鈕 -->
+    <a href="../index.html">
+        <input type="submit" value="回首頁" id="button" class="bt">
+    </a>
+</body>
+</html>

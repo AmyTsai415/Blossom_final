@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f1acc2;
+    color: #ea5783;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.products {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* 商品容器 */
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+/* 商品圖片 */
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cart {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* 購物車項目清單 */
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f1acc2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ea5783;
+}
+
+/* 分隔線 */
+.separator {
+    border-top: 2px dashed #ea5783;
+    /* 虛線 */
+    margin: 30px auto;
+    width: 100%;
+}
+
+.separator2 {
+    border-top: 2px solid #ea5783;
+    margin: 30px auto;
+    width: 100%;
+}
+
+/* 購物車項目圖片 */
+.cart-item img {
+    height: 105.6px;
+    width: 92.4px;
+    margin-left: 30px;
+    transition: transform 0.3s ease;
+    margin-top: 15px;
+    border: 5px solid #f1acc2;
+    /* 將邊框樣式設置為 solid，並設置邊框顏色 */
+    border-radius: 5px;
+}
+
+/* 購物車項目詳細資訊 */
+.item-details {
+    margin-left: 30px;
+}
+
+/* 按鈕樣式 */
+.bt {
+    height: 38px;
+    font-size: 18px;
+    background-color: #ea5783;
+    color: white;
+    border: none;
+    padding: 0px 10px 5px 10px;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .products,
+    .cart {
+        margin-right: 0;
+    }
+
+    .cart-item {
+        display: flex; 
+        align-items: center; 
+    }
+    
+    .cart-item img {
+        height: 105.6px;
+        width: 92.4px;
+        margin-right: 15px; 
+        border: 5px solid #f1acc2;
+        border-radius: 5px;
+    }
+    
+    .item-details {
+        flex: 1;
+    }
+}

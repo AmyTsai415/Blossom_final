@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" href="../assets/css/shoppingcart.css">
+</head>
+
+<body>
+    <header>
+        <h1>購物車</h1>
+    </header>
+    <main>
+        <div class="cart">
+            <!-- 購物車內容 -->
+            <div id="cart-items">
+                <!-- 商品列表 -->
+                <div class="cart-item">
+                    <img src="../assets/images/IMG_3528.jpg" alt="Product 1">
+                    <div class="item-details">
+                        <h3>粉夢鬱金香</h3>
+                        <p>數量: 2</p>
+                        <p>價格: $598</p>
+                        <!-- 刪除按鈕(新加的)-->
+                        <button onclick="deleteCartItem(this)" class="delete-btn">刪除</button>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="cart-item">
+                    <img src="../assets/images/IMG_3529.jpg" alt="Product 2">
+                    <div class="item-details">
+                        <h3>純愛之白</h3>
+                        <p>數量: 1</p>
+                        <p>價格: $790</p>
+                        <!-- 刪除按鈕(新加的)-->
+                        <button onclick="deleteCartItem(this)" class="delete-btn">刪除</button>
+                    </div>
+                </div>
+                <!-- 其他商品 -->
+            </div>
+            <div class="separator2"></div>
+            <div class="total">
+                <h3 style="text-align: right;">總價:</h3>
+                <p style="text-align: right;">$1388</p> <!-- 總價格 -->
+                <button onclick="window.location.href = 'pay.html';" style="float: right;">確認付款</button>
+            </div>
+            <!-- 回首頁按鈕 -->
+            <button onclick="window.location.href = '../index.html';" style="float: left;">回首頁</button>
+        </div>
+    </main>
+
+    <!-- 新加的 -->
+    <script>
+        function deleteCartItem(button) {
+            // 獲取要刪除的商品項目的父節點（cart-item）
+            var cartItem = button.parentNode.parentNode;
+            // 從父節點中刪除該商品項目
+            cartItem.parentNode.removeChild(cartItem);
+        }
+    </script>
+</body>
+
+</html>

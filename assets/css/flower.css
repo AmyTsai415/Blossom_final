@@ -1,0 +1,68 @@
+/* 整體樣式設定 */
+body {
+    font-family: Arial, sans-serif;
+    /* 使用Arial字體 */
+    margin: 0;
+    /* 移除邊距 */
+    padding: 0;
+    /* 移除內邊距 */
+}
+
+/* 容器樣式 */
+.container {
+    display: flex;
+    /* 使用彈性盒子 */
+    justify-content: center;
+    /* 在水平方向置中對齊 */
+    align-items: center;
+    /* 在垂直方向置中對齊 */
+    height: 100vh;
+    /* 高度占滿整個視窗 */
+}
+
+/* 產品圖片樣式 */
+.product-image {
+    flex: 1;
+    /* 彈性增長 */
+    padding: 20px;
+    /* 內邊距 */
+}
+
+.product-image img {
+    max-width: 100%;
+    /* 圖片最大寬度 */
+    height: auto;
+    /* 高度自動調整 */
+}
+
+/* 產品詳細資訊樣式 */
+.product-details {
+    flex: 1;
+    /* 彈性增長 */
+    padding: 20px;
+    /* 內邊距 */
+}
+
+.product-details h2 {
+    font-size: 24px;
+    /* 標題字體大小 */
+    margin-bottom: 10px;
+    /* 底部外邊距 */
+}
+
+.product-details p {
+    font-size: 16px;
+    /* 段落字體大小 */
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-image,
+    .product-details {
+        padding: 10px;
+    }
+}

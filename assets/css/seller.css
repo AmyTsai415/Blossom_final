@@ -1,0 +1,113 @@
+body {
+    background-color: #f9f6f7; /* 淡粉色背景 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* 白色容器 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
+}
+
+h1 {
+    text-align: center;
+    color: #ff6680; /* 淡粉色標題 */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666; /* 灰色標籤 */
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* 灰色邊框 */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+.add-button,
+.close-button {
+    background-color: #ff6680; /* 淡粉色按鈕 */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* 添加平滑過渡效果 */
+}
+
+input[type="submit"]:hover,
+.add-button:hover,
+.close-button:hover {
+    background-color: #e0526b; /* 深粉色悬停按鈕 */
+}
+
+.product-list {
+    margin-top: 30px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f6f7; /* 淡粉色背景 */
+    overflow: hidden;
+    transition: box-shadow 0.3s ease; /* 添加平滑過渡效果 */
+}
+
+.product-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加懸停時的陰影效果 */
+}
+
+.product-item img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.product-details h3 {
+    margin-top: 0;
+    color: #333; /* 黑色標題 */
+}
+
+.product-details p {
+    margin-bottom: 5px;
+    color: #666; /* 灰色文字 */
+}
+
+.back-button {
+    background-color: #ea8cc9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    float: right;
+}
+
+.back-button:hover {
+    background-color: #ff6680;
+}
+
+.product-item img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 150px; /* 設置圖片寬度 */
+    height: auto; /* 讓高度根據寬度等比例縮放 */
+}

@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    /* 設置字體 */
+    padding: 0px;
+    /* 內邊距 */
+    background: #f1f1f1;
+    /* 背景顏色 */
+}
+
+.header {
+    padding: 30px;
+    /* 內邊距 */
+    text-align: center;
+    /* 文字置中 */
+    background: #ef97b2;
+    /* 背景顏色 */
+    color: white;
+    /* 文字顏色 */
+}
+
+.header h1 {
+    font-size: 50px;
+    /* 標題字體大小 */
+}
+
+.topnav {
+    overflow: hidden;
+    /* 超出隱藏 */
+    background-color: #f1acc2;
+    /* 背景顏色 */
+}
+
+.topnav a {
+    float: left;
+    /* 浮動在左側 */
+    display: block;
+    /* 塊級元素 */
+    color: white;
+    /* 文字顏色 */
+    text-align: center;
+    /* 文字置中 */
+    padding: 14px 16px;
+    /* 內邊距 */
+    text-decoration: none;
+    /* 去除下劃線 */
+    font-size: 17px;
+    /* 字體大小 */
+}
+
+.topnav a~a {
+    margin-left: 20px;
+    /* 左邊距 */
+}
+
+.topnav a:hover {
+    background-color: #ea5783;
+    /* 滑鼠懸停時的背景顏色 */
+    color: white;
+    /* 文字顏色 */
+}
+
+.footer {
+    padding: 30px;
+    /* 內邊距 */
+    text-align: center;
+    /* 文字置中 */
+    background: #ef97b2;
+    /* 背景顏色 */
+    color: white;
+    /* 文字顏色 */
+    margin-top: 30px;
+    /* 上邊距 */
+}
+
+.search-form input[type="text"] {
+    width: 200px;
+    /* 寬度 */
+    padding: 10px;
+    /* 內邊距 */
+    border: 1px solid #ccc;
+    /* 邊框 */
+    border-radius: 5px;
+    /* 圓角 */
+    outline: none;
+    /* 外框 */
+    font-size: 16px;
+    /* 字體大小 */
+    margin-top: 5px;
+    /* 上邊距 */
+    margin-left: 10px;
+    /* 左邊距 */
+    margin-bottom: 5px;
+    /* 下邊距 */
+}
+
+.search-form button {
+    padding: 10px 20px;
+    /* 內邊距 */
+    background-color: #ef97b2;
+    /* 背景顏色 */
+    color: white;
+    /* 文字顏色 */
+    border: none;
+    /* 去除邊框 */
+    border-radius: 5px;
+    /* 圓角 */
+    cursor: pointer;
+    /* 指標形狀 */
+    font-size: 12px;
+    /* 字體大小 */
+}
+
+.search-form button:hover {
+    background-color: #ea5783;
+    /* 滑鼠懸停時的背景顏色 */
+}
+
+* {
+    box-sizing: border-box;
+    /* 盒模型 */
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    /* 字體 */
+}
+
+.mySlides {
+    display: none;
+    /* 隱藏 */
+}
+
+img {
+    vertical-align: middle;
+    /* 垂直對齊 */
+}
+
+.slideshow-container {
+    max-width: 800px;
+    /* 最大寬度 */
+    position: relative;
+    /* 位置相對 */
+    margin: auto;
+    /* 居中 */
+    margin-top: 30px;
+    /* 上邊距 */
+}
+
+.text {
+    color: #f2f2f2;
+    /* 文字顏色 */
+    font-size: 15px;
+    /* 字體大小 */
+    padding: 8px 12px;
+    /* 內邊距 */
+    position: absolute;
+    /* 位置絕對 */
+    bottom: 8px;
+    /* 底部距離 */
+    width: 100%;
+    /* 寬度 */
+    text-align: center;
+    /* 文字置中 */
+}
+
+.numbertext {
+    color: #f2f2f2;
+    /* 文字顏色 */
+    font-size: 12px;
+    /* 字體大小 */
+    padding: 8px 12px;
+    /* 內邊距 */
+    position: absolute;
+    /* 位置絕對 */
+    top: 0;
+    /* 上邊距 */
+}
+
+.dot {
+    height: 15px;
+    /* 高度 */
+    width: 15px;
+    /* 寬度 */
+    margin: 0 2px;
+    /* 外邊距 */
+    background-color: #bbb;
+    /* 背景顏色 */
+    border-radius: 50%;
+    /* 圓角 */
+    display: inline-block;
+    /* 行內元素 */
+    transition: background-color 0.6s ease;
+    /* 過渡效果 */
+}
+
+.active {
+    background-color: #717171;
+    /* 活動狀態的背景顏色 */
+}
+
+.fade {
+    animation-name: fade;
+    /* 動畫名稱 */
+    animation-duration: 1.5s;
+    /* 動畫持續時間 */
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+            /* 不透明度 */
+    }
+
+    to {
+        opacity: 1
+            /* 不透明度 */
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+            /* 字體大小 */
+    }
+}
+
+#scrollToTopBtn {
+    display: none;
+    /* 隱藏按鈕 */
+    position: fixed;
+    /* 定位方式 */
+    bottom: 20px;
+    /* 底部距離 */
+    right: 30px;
+    /* 右邊距 */
+    z-index: 99;
+    /* 層級 */
+    font-size: 18px;
+    /* 字體大小 */
+    border: none;
+    /* 去除邊框 */
+    outline: none;
+    /* 去除外框 */
+    background-color: #eeb8b8;
+    /* 背景顏色 */
+    color: white;
+    /* 文字顏色 */
+    cursor: pointer;
+    /* 指標形狀 */
+    padding: 15px;
+    /* 內邊距 */
+    border-radius: 50%;
+    /* 圓角 */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #fadcda;
+    /* 滑鼠懸停時的背景顏色 */
+}
+
+.separator {
+    border-top: 2px dashed #ea5783;
+    /* 虛線分隔線 */
+    margin: 30px auto;
+    /* 上下置中 */
+    width: 100%;
+    /* 寬度 */
+}
+
+
+h3 {
+    text-align: center;
+    /* 文字置中 */
+}
+
+.contact-container {
+    display: flex;
+    /* 使用 flex 佈局 */
+    justify-content: space-between;
+    /* 在元素間平均分配空間 */
+}
+
+.contact-container iframe {
+    width: 50%;
+    /* 地圖佔一半寬度 */
+    height: 500px;
+    /* 高度 */
+    border: 0;
+    /* 去除邊框 */
+}
+
+.contact-container .container {
+    width: 45%;
+    /* 聯絡表單佔 45% 寬度 */
+    padding: 20px;
+    /* 內邊距 */
+    background-color: #f2f2f2;
+    /* 背景顏色 */
+    border-radius: 10px;
+    /* 圓角 */
+}
+
+/* 調整表單元素的寬度 */
+.contact-container input[type=text],
+.contact-container input[type=submit],
+.contact-container select,
+.contact-container textarea {
+    width: 100%;
+    /* 寬度 */
+    padding: 12px;
+    /* 內邊距 */
+    border: 1px solid #ccc;
+    /* 邊框 */
+    border-radius: 4px;
+    /* 圓角 */
+    box-sizing: border-box;
+    /* 盒模型 */
+    margin-top: 6px;
+    /* 上邊距 */
+    margin-bottom: 16px;
+    /* 下邊距 */
+    resize: vertical;
+    /* 調整大小 */
+}
+
+.contact-container input[type=submit] {
+    background-color: #f1acc2;
+    /* 背景顏色 */
+    color: white;
+    /* 文字顏色 */
+    padding: 12px 20px;
+    /* 內邊距 */
+    border: none;
+    /* 去除邊框 */
+    border-radius: 4px;
+    /* 圓角 */
+    cursor: pointer;
+    /* 指標形狀 */
+}
+
+.contact-container input[type=submit]:hover {
+    background-color: #ea5783;
+    /* 滑鼠懸停時的背景顏色 */
+}
+
+.contact-container textarea {
+    height: 150px;
+    /* 調整文本區域的高度 */
+}
+
+@media only screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .topnav a {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .search-form input[type="text"] {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .search-form button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .contact-container iframe {
+        height: 250px;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-container .container {
+        margin-top: 20px;
+    }
+}
+
+/* 新加的 */
+.topnav .nav-link {
+    border: none; 
+    overflow: hidden;
+    /* 超出隱藏 */
+    background-color: #f1acc2;
+    /* 背景顏色 */
+    float: left;
+    /* 浮動在左側 */
+    display: block;
+    /* 塊級元素 */
+    color: white;
+    /* 文字顏色 */
+    text-align: center;
+    /* 文字置中 */
+    padding: 14px 16px;
+    /* 內邊距 */
+    text-decoration: none;
+    /* 去除下劃線 */
+    font-size: 17px;
+    /* 字體大小 */
+}
+
+/* 新加的 */
+.topnav .nav-link:hover {
+    background-color: #ea5783;
+    /* 滑鼠懸停時的背景顏色 */
+    color: white;
+    /* 文字顏色 */
+}

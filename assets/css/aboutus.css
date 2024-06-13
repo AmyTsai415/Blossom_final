@@ -1,0 +1,245 @@
+body {
+    background-color: #fac9d9;
+    /* 背景顏色 */
+}
+
+.a1 {
+    text-align: center;
+    /* 文字置中 */
+    font-style: bold;
+    /* 字體樣式為粗體 */
+    font-size: 20px;
+    /* 字體大小 */
+    margin-top: 25px;
+    /* 上邊距 */
+    margin-left: 10px;
+    /* 左邊距 */
+    margin-right: 10px;
+    /* 右邊距 */
+}
+
+h1 {
+    text-align: center;
+    /* 標題置中 */
+    color: white;
+    /* 文字顏色 */
+    font-style: bold;
+    /* 字體樣式為粗體 */
+    font-size: 40px;
+    /* 字體大小 */
+    text-shadow: black;
+    /* 文字陰影 */
+    background-color: #ea5783;
+    /* 背景顏色 */
+    border-radius: 25px;
+    /* 圓角 */
+    padding: 10px 20px;
+    /* 內邊距 */
+    width: fit-content;
+    /* 寬度隨內容調整 */
+    margin: 0 auto;
+    /* 上下置中 */
+    margin-top: 25px;
+    /* 上邊距 */
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    /* 陰影效果 */
+}
+
+h2 {
+    font-style: bold;
+    /* 字體樣式為粗體 */
+}
+
+.member {
+    display: flex;
+    /* 使用 flex 佈局 */
+    justify-content: space-between;
+    /* 在元素間平均分配空間 */
+    align-items: center;
+    /* 在交叉軸上置中對齊 */
+    margin-bottom: 50px;
+    /* 底邊距 */
+    margin-left: 50px;
+    /* 左邊距 */
+    margin-right: 50px;
+    /* 右邊距 */
+}
+
+.member img {
+    width: 150px;
+    /* 圖片寬度 */
+    height: auto;
+    /* 圖片高度自動調整 */
+    margin-bottom: 10px;
+    /* 下邊距 */
+    border-radius: 8px;
+    /* 圖片圓角 */
+    border: white solid;
+    /* 圖片邊框 */
+    border-width: 8px;
+    /* 邊框寬度 */
+}
+
+.member-details {
+    flex: 1;
+    /* 使用剩餘空間 */
+    margin-left: 20px;
+    /* 左邊距 */
+    text-align: left;
+    /* 文字左對齊 */
+}
+
+.separator {
+    border-top: 2px dashed #ea5783;
+    /* 虛線分隔線 */
+    margin: 30px auto;
+    /* 上下置中 */
+    width: 100%;
+    /* 寬度 */
+}
+
+.separator2 {
+    border-top: 2px solid #ea5783;
+    /* 實線分隔線 */
+    margin: 30px auto;
+    /* 上下置中 */
+    width: 100%;
+    /* 寬度 */
+}
+
+.bt {
+    height: 38px;
+    /* 按鈕高度 */
+    font-size: 18px;
+    /* 字體大小 */
+    background-color: #ea5783;
+    /* 背景顏色 */
+    color: white;
+    /* 文字顏色 */
+    border: none;
+    /* 去除邊框 */
+    padding: 0px 10px 5px 10px;
+    /* 內邊距 */
+    cursor: pointer;
+    /* 指標形狀 */
+    justify-content: center;
+    /* 內容水平置中 */
+    margin-top: 5px;
+    /* 上邊距 */
+    margin-bottom: 50px;
+    /* 下邊距 */
+    margin-left: 30px;
+    /* 左邊距 */
+}
+
+#scrollToTopBtn {
+    display: none;
+    /* 隱藏按鈕 */
+    position: fixed;
+    /* 定位方式 */
+    bottom: 20px;
+    /* 底部距離 */
+    right: 30px;
+    /* 右邊距 */
+    z-index: 99;
+    /* 層級 */
+    font-size: 18px;
+    /* 字體大小 */
+    border: none;
+    /* 去除邊框 */
+    outline: none;
+    /* 去除外框 */
+    background-color: #eeb8b8;
+    /* 背景顏色 */
+    color: white;
+    /* 文字顏色 */
+    cursor: pointer;
+    /* 指標形狀 */
+    padding: 15px;
+    /* 內邊距 */
+    border-radius: 50%;
+    /* 圓角 */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #fadcda;
+    /* 滑鼠懸停時的背景顏色 */
+}
+
+@media screen and (max-width: 768px) {
+    .topnav a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .member {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px 30px 20px;
+    }
+
+    .member img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .member-details {
+        margin: 20px 0 0 0;
+        text-align: left;
+    }
+
+    .header h1 {
+        font-size: 35px;
+    }
+
+    .header {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .a1 {
+        font-size: 16px;
+        margin: 20px 5px;
+        text-align: left;
+    }
+
+    .header h1 {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .topnav a {
+        font-size: 15px;
+        margin: 5px 0;
+        text-align: left;
+    }
+
+    .search-form input[type="text"] {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .search-form button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .member {
+        margin: 0 10px 20px 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member img {
+        margin: 0 auto;
+    }
+}

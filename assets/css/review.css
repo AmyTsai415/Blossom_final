@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    /* 使用 Arial 字體 */
+    margin: 0;
+    /* 頁面邊距為零 */
+    padding: 0;
+    /* 頁面內距為零 */
+    box-sizing: border-box;
+    /* 使用邊框盒模型 */
+    background-color: #faeef2;
+}
+
+.container {
+    max-width: 800px;
+    /* 最大寬度為 800px */
+    margin: 20px auto;
+    /* 上下居中 */
+    padding: 0 20px;
+    /* 左右內距為 20px */
+}
+
+h1 {
+    text-align: center;
+    /* 文本居中 */
+}
+
+.review-form {
+    margin-top: 20px;
+    /* 與上方間距為 20px */
+    text-align: center;
+    /* 文本居中 */
+}
+
+.review-form textarea {
+    width: 100%;
+    /* 寬度佔滿容器 */
+    height: 100px;
+    /* 高度為 100px */
+    margin-bottom: 10px;
+    /* 底部間距為 10px */
+}
+
+.review-form input[type="submit"] {
+    padding: 10px 20px;
+    /* 內距 */
+    background-color: #ea5783;
+    /* 背景顏色 */
+    color: #fff;
+    /* 文本顏色 */
+    border: none;
+    /* 去除邊框 */
+    cursor: pointer;
+    /* 鼠標樣式 */
+    margin-top: 20px;
+    /* 與上方間距為 20px */
+}
+
+.search-form input[type="number"] {
+    width: 200px;
+    /* 寬度為 200px */
+    margin-top: 20px;
+    /* 與上方間距為 20px */
+}
+
+.review-list {
+    margin-top: 50px;
+    /* 與上方間距為 50px */
+    list-style: none;
+    /* 去除點 */
+    padding: 0;
+    /* 內距為零 */
+}
+
+.review {
+    border-bottom: 1px solid #ccc;
+    /* 底部邊框 */
+    padding: 20px 0;
+    /* 上下內距 */
+}
+
+.review p {
+    margin: 5px 0;
+    /* 外邊距 */
+}
+
+.review .rating {
+    color: #f39c12;
+    /* 文本顏色 */
+    font-size: 18px;
+    /* 字體大小 */
+}
+
+.bt {
+    height: 40px;
+    /* 高度為 40px */
+    font-size: 14px;
+    /* 字體大小為 14px */
+    background-color: #ea5783;
+    /* 背景顏色 */
+    color: white;
+    /* 文本顏色 */
+    border: none;
+    /* 去除邊框 */
+    border-radius: 30px;
+    /* 圓角 */
+    justify-content: center;
+    /* 內容水平居中 */
+    margin-top: 10px;
+    /* 與上方間距為 10px */
+    margin-bottom: 20px;
+    /* 與下方間距為 20px */
+}
+
+/* 按鈕樣式 */
+
+.star-rating {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transform: scaleX(-1);
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+}
+
+.star-rating label::before {
+    content: '\f005';
+    font-family: FontAwesome;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: #ea5783;
+}
+
+.star-rating label::after {
+    content: '\f005';
+    font-family: FontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    color: gold;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.star-rating label:hover::after,
+.star-rating label:hover ~ label::after,
+.star-rating input:checked ~ label::after {
+    opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .bt {
+        bottom: 10px;
+        left: 10px;
+        padding: 10px 20px; 
+    }
+
+    .review-form textarea {
+        height: 70px;
+    }
+}

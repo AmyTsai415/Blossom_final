@@ -1,0 +1,311 @@
+/* 整體樣式設定 */
+body {
+    font-family: Arial, sans-serif;
+    /* 使用Arial字體 */
+    height: 200vh;
+    margin: 0;
+    /* 移除邊距 */
+    padding: 0px;
+    /* 內邊距 */
+}
+
+.header {
+    padding: 30px;
+    /* 內邊距 */
+    text-align: center;
+    /* 文字置中 */
+    background: #ef97b2;
+    /* 背景顏色 */
+    color: white;
+    /* 文字顏色 */
+}
+
+.header h1 {
+    font-size: 50px;
+    /* 標題字體大小 */
+}
+
+.topnav {
+    overflow: hidden;
+    /* 超出隱藏 */
+    background-color: #f1acc2;
+    /* 背景顏色 */
+}
+
+.topnav a {
+    float: left;
+    /* 浮動在左側 */
+    display: block;
+    /* 塊級元素 */
+    color: white;
+    /* 文字顏色 */
+    text-align: center;
+    /* 文字置中 */
+    padding: 14px 16px;
+    /* 內邊距 */
+    text-decoration: none;
+    /* 去除下劃線 */
+    font-size: 17px;
+    /* 字體大小 */
+}
+
+.topnav a~a {
+    margin-left: 20px;
+    /* 左邊距 */
+}
+
+.topnav a:hover {
+    background-color: #ea5783;
+    /* 滑鼠懸停時的背景顏色 */
+    color: white;
+    /* 文字顏色 */
+}
+
+.footer {
+    padding: 30px;
+    /* 內邊距 */
+    text-align: center;
+    /* 文字置中 */
+    background: #ef97b2;
+    /* 背景顏色 */
+    color: white;
+    /* 文字顏色 */
+    margin-top: 30px;
+    /* 上邊距 */
+}
+
+.search-form input[type="text"] {
+    width: 200px;
+    /* 寬度 */
+    padding: 10px;
+    /* 內邊距 */
+    border: 1px solid #ccc;
+    /* 邊框 */
+    border-radius: 5px;
+    /* 圓角 */
+    outline: none;
+    /* 外框 */
+    font-size: 16px;
+    /* 字體大小 */
+    margin-top: 5px;
+    /* 上邊距 */
+    margin-left: 10px;
+    /* 左邊距 */
+    margin-bottom: 5px;
+    /* 下邊距 */
+}
+
+.search-form button {
+    padding: 10px 20px;
+    /* 內邊距 */
+    background-color: #ef97b2;
+    /* 背景顏色 */
+    color: white;
+    /* 文字顏色 */
+    border: none;
+    /* 去除邊框 */
+    border-radius: 5px;
+    /* 圓角 */
+    cursor: pointer;
+    /* 指標形狀 */
+    font-size: 12px;
+    /* 字體大小 */
+}
+
+.search-form button:hover {
+    background-color: #ea5783;
+    /* 滑鼠懸停時的背景顏色 */
+}
+
+/* 容器樣式 */
+.container {
+    max-width: 800px;
+    /* 最大寬度 */
+    margin: 20px auto;
+    /* 外邊距 */
+    padding: 0 20px;
+    /* 內邊距 */
+}
+
+/* 行樣式 */
+.row {
+    display: flex;
+    /* 使用彈性盒子 */
+    justify-content: space-between;
+    /* 在兩端分配空間 */
+    margin-bottom: 20px;
+    /* 下邊距 */
+}
+
+/* 產品樣式 */
+.product {
+    width: calc(33.33% - 20px);
+    /* 寬度計算，三列布局，每列占据1/3宽度，减去列之间的间距 */
+    border: 1px solid #ccc;
+    /* 邊框 */
+    padding: 20px;
+    /* 內邊距 */
+    position: relative;
+    /* 定位 */
+}
+
+.product img {
+    max-width: 100%;
+    /* 最大寬度 */
+    height: 50%;
+    /* 高度 */
+    width: 100%;
+    /* 寬度 */
+    transition: transform 0.3s ease;
+    /* 平滑過渡 */
+}
+
+.product img:hover {
+    transform: scale(1.1);
+    /* 滑鼠懸停時放大 */
+}
+
+.product h2 {
+    margin-top: 0;
+    /* 上邊距 */
+}
+
+.product p {
+    margin-bottom: 10px;
+    /* 下邊距 */
+}
+
+.btn {
+    background-color: #ea5783;
+    /* 按鈕背景顏色 */
+    color: #fff;
+    /* 文字顏色 */
+    padding: 10px 20px;
+    /* 內邊距 */
+    border: none;
+    /* 移除邊框 */
+    cursor: pointer;
+    /* 鼠標樣式 */
+    text-decoration: none;
+    /* 移除底線 */
+    position: absolute;
+    /* 定位 */
+    bottom: 20px;
+    /* 底部定位 */
+    right: 20px;
+    /* 右側定位 */
+    border-radius: 5%;
+    /* 圓角 */
+}
+
+.btn:hover {
+    background-color: #ecc5f3;
+    /* 滑鼠懸停時的背景顏色 */
+}
+
+.bt {
+    height: 40px;
+    /* 高度 */
+    font-size: 14px;
+    /* 字體大小 */
+    background-color: #cba4b1;
+    /* 按鈕背景顏色 */
+    color: white;
+    /* 文字顏色 */
+    border: none;
+    /* 移除邊框 */
+    padding: 0px 10px 5px 10px;
+    /* 內邊距 */
+    border-radius: 30px;
+    /* 圓角 */
+    cursor: pointer;
+    /* 鼠標樣式 */
+    justify-content: center;
+    /* 內容置中 */
+    margin-top: 280px;
+    /* 上邊距 */
+}
+
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 30px;
+    }
+    .header p {
+        font-size: 10px;
+    }
+
+    .topnav a {
+        font-size: 10px;
+        padding: 10px 12px;
+    }
+
+    .search-form input[type="text"] {
+        width: auto;
+        margin-left: 20px;
+        font-size: 10px;
+    }
+
+    .search-form button {
+        width: auto;
+        font-size: 10px;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .product img {
+        max-width: auto;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        max-width: 300px; 
+    }
+
+    .bt {
+        bottom: 10px;
+        left: 10px;
+        padding: 10px 20px; 
+    }
+}
+
+/* 新加的 */
+.topnav .nav-link {
+    border: none; 
+    overflow: hidden;
+    /* 超出隱藏 */
+    background-color: #f1acc2;
+    /* 背景顏色 */
+    float: left;
+    /* 浮動在左側 */
+    display: block;
+    /* 塊級元素 */
+    color: white;
+    /* 文字顏色 */
+    text-align: center;
+    /* 文字置中 */
+    padding: 14px 16px;
+    /* 內邊距 */
+    text-decoration: none;
+    /* 去除下劃線 */
+    font-size: 17px;
+    /* 字體大小 */
+}
+
+/* 新加的 */
+.topnav .nav-link:hover {
+    background-color: #ea5783;
+    /* 滑鼠懸停時的背景顏色 */
+    color: white;
+    /* 文字顏色 */
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後臺管理商品上架</title>
+    <script src="../assets/JS/seller.js"></script>
+    <link rel="stylesheet" href="../assets/css/seller.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>後臺管理系統</h1>
+        <button onclick="showAddProductForm()" class="add-button">新增商品</button>
+        <!-- 新增商品表單 -->
+        <div id="add-product-form" style="display: none;">
+            <form action="#" method="post">
+                <label for="product_name">商品名稱:</label>
+                <input type="text" id="product_name" name="product_name" required>
+
+                <label for="description">商品描述:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <label for="price">價格:</label>
+                <input type="text" id="price" name="price" required>
+
+                <label for="quantity">數量:</label>
+                <input type="text" id="quantity" name="quantity" required>
+
+                <label for="image">商品圖片 URL:</label>
+                <input type="text" id="image" name="image" required>
+
+                <button onclick="seller()" class="add-button">上架商品</button>
+                <!-- 新增關閉按鈕 -->
+                <button type="button" onclick="hideAddProductForm()" class="close-button">關閉</button>
+            </form>
+        </div>
+
+        <!-- 商品列表 -->
+        <div class="product-list">
+            <h2>已上架商品</h2>
+            <div class="product-item">
+                <img src="../assets/images/IMG_3528.jpg" alt="商品圖片">
+                <div class="product-details">
+                    <h3>商品名稱:粉夢鬱金香</h3>
+                    <p>商品描述:</p>
+                    <br>這些粉色鬱金香如夢如幻，綻放著溫柔的浪漫氛圍。
+                    <p>價格: $299</p>
+                </div>
+            </div>
+        </div>
+        <!-- 這裡用 JavaScript 動態生成已上架的商品列表 -->
+    </div>
+
+    <!-- 回首頁按钮 -->
+    <button onclick="window.location.href = '../index.html';" class="back-button">回首頁</button>
+</div>
+
+
+</body>
+
+</html>

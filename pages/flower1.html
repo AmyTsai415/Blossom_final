@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh"> <!-- 設置語言為繁體中文 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品評價和評分</title> <!-- 頁面標題 -->
+    <link rel="stylesheet" href="../assets/css/review.css"> <!-- 引入外部樣式表 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>商品評價和評分</h1> <!-- 主標題 -->
+    
+        <!-- 評論表單區域 -->
+        <div class="review-form">
+            <form action="#" method="post">
+                <textarea name="review" placeholder="請輸入您的評論"></textarea> <!-- 評論輸入框 -->
+                <br>
+                <div class="star-rating">
+                    <input type="radio" name="star" id="star1"><label for="star1"></label>
+                    <input type="radio" name="star" id="star2"><label for="star2"></label>
+                    <input type="radio" name="star" id="star3"><label for="star3"></label>
+                    <input type="radio" name="star" id="star4"><label for="star4"></label>
+                    <input type="radio" name="star" id="star5"><label for="star5"></label>
+                </div>
+                <input type="submit" value="提交評論"> <!-- 提交按鈕 -->
+            </form>
+        </div>
+    
+        <!-- 評論列表區域 -->
+        <div class="review-list">
+            <h2>評論列表</h2> <!-- 次標題 -->
+            <ul>
+                <!-- 單個評論 -->
+                <li class="review">
+                    <p>這是一個很棒的商品，非常喜歡！</p> <!-- 評論內容 -->
+                    <p class="rating">評分：5</p> <!-- 評分 -->
+                </li>
+                <!-- 單個評論 -->
+                <li class="review">
+                    <p>一般般，沒有特別的感覺。</p> <!-- 評論內容 -->
+                    <p class="rating">評分：3</p> <!-- 評分 -->
+                </li>
+                <!-- 單個評論 -->
+                <li class="review">
+                    <p>品質不錯，但價格稍微有點高。</p> <!-- 評論內容 -->
+                    <p class="rating">評分：4</p> <!-- 評分 -->
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 返回首頁按鈕 -->
+    <a href="../index.html" style="text-align: center; display: block;">
+        <input type="submit" value="回首頁" id="button" class="bt">
+    </a>
+</body>
+
+</html>

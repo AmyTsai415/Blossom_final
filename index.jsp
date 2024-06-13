@@ -6,9 +6,9 @@
 
 <head>
     <!-- 引入外部樣式表 -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- 引入外部 JavaScript 文件 -->
-    <script src="../assets/JS/script.js"></script>
+    <script src="assets/JS/script.js"></script>
 </head>
 
 <body>
@@ -21,30 +21,30 @@
     <!-- 頁面導航欄 -->
     <div class="topnav">
         <!-- 商品鏈接 -->
-        <a href="goods1.jsp">乾燥花束</a>
-        <a href="goods.jsp">鮮花花束</a>
-        <a href="goods2.jsp">鐘罩花</a>
+        <a href="pages/goods1.jsp">乾燥花束</a>
+        <a href="pages/goods.jsp">鮮花花束</a>
+        <a href="pages/goods2.jsp">鐘罩花</a>
 
         <!-- 判斷用戶是否登錄 -->
         <%
             if (session.getAttribute("loggedIn") != null && (boolean) session.getAttribute("loggedIn")) {
         %>
             <!-- 已登錄狀態 -->
-            <a href="logout.jsp" style="float:right">登出</a>
-            <a href="backstage.jsp" style="float:right">我的資料</a>
+            <a href="pages/logout.jsp" style="float:right">登出</a>
+            <a href="pages/backstage.jsp" style="float:right">我的資料</a>
         <%
             } else {
         %>
             <!-- 未登錄狀態 -->
-            <a href="login.jsp" style="float:right">登入/註冊</a>
+            <a href="pages/login.jsp" style="float:right">登入/註冊</a>
         <%
             }
         %>
-        <a href="shoppingcart.jsp" style="float:right">購物車</a>
-        <a href="aboutus.jsp" style="float:right">關於我們</a>
-		<a href="backlogin.jsp" style="float:right">賣家系統</a>
+        <a href="pages/shoppingcart.jsp" style="float:right">購物車</a>
+        <a href="pages/aboutus.jsp" style="float:right">關於我們</a>
+		<a href="pages/backlogin.jsp" style="float:right">賣家系統</a>
         <!-- 搜索表單 -->
-        <form class="search-form" action="search.jsp" method="get">
+        <form class="search-form" action="pages/search.jsp" method="get">
             <input type="text" placeholder="尋找商品..." name="search">
             <button type="submit">搜尋</button>
 			
@@ -57,22 +57,22 @@
         <!-- 幻燈片 1 -->
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <a href="goods1.jsp">
-                <img src="../assets/images/slidepic_1.PNG" style="width:100%">
+            <a href="pages/goods1.jsp">
+                <img src="assets/images/slidepic_1.PNG" style="width:100%">
             </a>
         </div>
         <!-- 幻燈片 2 -->
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
-            <a href="goods2.jsp">
-                <img src="../assets/images/slidepic_2.PNG" style="width:100%">
+            <a href="pages/goods2.jsp">
+                <img src="assets/images/slidepic_2.PNG" style="width:100%">
             </a>
         </div>
         <!-- 幻燈片 3 -->
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
-            <a href="goods.jsp">
-                <img src="../ssets/images/slidepic_3.PNG" style="width:100%">
+            <a href="pages/goods.jsp">
+                <img src="ssets/images/slidepic_3.PNG" style="width:100%">
             </a>
         </div>
     </div>
@@ -94,7 +94,7 @@
         <!-- 聯絡表單 -->
         <div class="container">
             <h3>Contact Form</h3>
-            <form id="contactForm" action="visitorCounter.jsp" method="post">
+            <form id="contactForm" action="pages/visitorCounter.jsp" method="post">
                 <label for="fname">Member ID</label>
                 <input type="text" id="MemberID" name="MemberID" placeholder="Your memberID.." required>
 
@@ -122,7 +122,7 @@
     <div class="footer">
         <p>版權所有 &copy; 2024 Blossom</p>
         <!-- 訪客計數器 -->
-        <%@include file="visitorCounter.jsp" %>
+        <%@include file="pages/visitorCounter.jsp" %>
     </div>
 
     <!-- 回到頂部按鈕 -->

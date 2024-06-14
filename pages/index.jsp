@@ -72,7 +72,7 @@
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
             <a href="goods.jsp">
-                <img src="../ssets/images/slidepic_3.PNG" style="width:100%">
+                <img src="../assets/images/slidepic_3.PNG" style="width:100%">
             </a>
         </div>
     </div>

@@ -46,7 +46,7 @@
 
     <div class="container">
         <%
-			request.setCharacterEncoding("UTF-8");
+            request.setCharacterEncoding("UTF-8");
             String searchQuery = request.getParameter("search");
 
             // 執行搜索邏輯
@@ -55,10 +55,9 @@
                     Class.forName("com.mysql.cj.jdbc.Driver");
                     String url = "jdbc:mysql://localhost:3306/shop?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC";
                     try (Connection con = DriverManager.getConnection(url, "root", "1234")) {
-                        String sql = "SELECT * FROM product WHERE Classification = ? OR Color = ?";
+                        String sql = "SELECT * FROM products WHERE product_name LIKE ?";
                         try (PreparedStatement pstmt = con.prepareStatement(sql)) {
-                            pstmt.setString(1, searchQuery);
-                            pstmt.setString(2, searchQuery);
+                            pstmt.setString(1, "%" + searchQuery + "%");
                             try (ResultSet rs = pstmt.executeQuery()) {
                                 if (!rs.isBeforeFirst()) {
         %>
@@ -69,12 +68,12 @@
                                     <div class="row">
         <%
                                         while (rs.next()) {
-                                            String productId = rs.getString("ProductID");
-                                            String productName = rs.getString("ProductName");
-                                            String productImage = rs.getString("ProductImage");
-                                            int productPrice = rs.getInt("ProductPrice");
-                                            int stockQuantity = rs.getInt("StockQuentity");
-                                            String productMessage = rs.getString("ProductMessage");
+                                            String productId = rs.getString("id");
+                                            String productName = rs.getString("product_name");
+                                            String productImage = rs.getString("image_name");
+                                            int productPrice = rs.getInt("price");
+                                            int stockQuantity = rs.getInt("inventory");
+                                            String productMessage = rs.getString("description");
         %>
                                             <div class="product">
                                                 <img src="../assets/images/<%= productImage %>.jpg">
@@ -115,7 +114,7 @@
             }
 
             // 處理加入購物車邏輯
-			request.setCharacterEncoding("UTF-8");
+            request.setCharacterEncoding("UTF-8");
             String action = request.getParameter("action");
             if ("addToCart".equals(action)) {
                 String MemberID = (String) session.getAttribute("MemberID");
@@ -176,18 +175,11 @@
                 }
             }
         %>
-		
-		
+    </div>
     
-   
-                </div>
-            </div>
-        </div>
-		
-		<!-- 返回首頁按鈕 -->
+    <!-- 返回首頁按鈕 -->
     <a href="index.jsp" style="text-align: center; display: block;">
         <input type="submit" value="回首頁" id="button" class="bt">
     </a>
-    
-    </body>
+</body>
 </html>

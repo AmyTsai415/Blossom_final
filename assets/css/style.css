@@ -354,6 +354,36 @@ h3 {
     /* 調整文本區域的高度 */
 }
 
+.topnav .nav-link {
+    border: none; 
+    overflow: hidden;
+    /* 超出隱藏 */
+    background-color: #f1acc2;
+    /* 背景顏色 */
+    float: left;
+    /* 浮動在左側 */
+    display: block;
+    /* 塊級元素 */
+    color: white;
+    /* 文字顏色 */
+    text-align: center;
+    /* 文字置中 */
+    padding: 14px 16px;
+    /* 內邊距 */
+    text-decoration: none;
+    /* 去除下劃線 */
+    font-size: 17px;
+    /* 字體大小 */
+}
+
+/* 新加的 */
+.topnav .nav-link:hover {
+    background-color: #ea5783;
+    /* 滑鼠懸停時的背景顏色 */
+    color: white;
+    /* 文字顏色 */
+}
+
 @media only screen and (max-width: 768px) {
     .header h1 {
         font-size: 30px;
@@ -399,35 +429,4 @@ h3 {
     .contact-container .container {
         margin-top: 20px;
     }
-}
-
-/* 新加的 */
-.topnav .nav-link {
-    border: none; 
-    overflow: hidden;
-    /* 超出隱藏 */
-    background-color: #f1acc2;
-    /* 背景顏色 */
-    float: left;
-    /* 浮動在左側 */
-    display: block;
-    /* 塊級元素 */
-    color: white;
-    /* 文字顏色 */
-    text-align: center;
-    /* 文字置中 */
-    padding: 14px 16px;
-    /* 內邊距 */
-    text-decoration: none;
-    /* 去除下劃線 */
-    font-size: 17px;
-    /* 字體大小 */
-}
-
-/* 新加的 */
-.topnav .nav-link:hover {
-    background-color: #ea5783;
-    /* 滑鼠懸停時的背景顏色 */
-    color: white;
-    /* 文字顏色 */
 }

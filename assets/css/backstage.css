@@ -341,7 +341,7 @@ img {
     .form_right {
         width: 100%;
         max-width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     .form {
@@ -350,7 +350,7 @@ img {
     }
 
     img {
-        width: 60%;
+        width: 100%;
         height: auto;
         display: block;
         margin: 0 auto;

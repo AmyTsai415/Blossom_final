@@ -161,7 +161,7 @@
         <div class="row">
             <div class="product">
                 <h2>白色之愛花舞</h2>
-                <img src="../assets/images/IMG_3534.jpg">
+                <a href="product7.html"><img src="../assets/images/IMG_3534.jpg"></a>
                 <p>商品描述: </p>
                 <br>金邊白玫瑰音響散發著 奢華的金色光芒,彷彿 在舞動的花海中演奏著 愛的樂章。</br>
                 <p>價格: $490</p>
@@ -178,7 +178,7 @@
             </div>
             <div class="product">
                 <h2>深藍之夢花築</h2>
-                <img src="../assets/images/IMG_3535.jpg">
+                <a href="product8.html"><img src="../assets/images/IMG_3535.jpg"></a>
                 <p>商品描述:</p>
                 <br>瑰猶如深藍色的夢境, 帶著神秘和浪漫,為你 營造一個迷人的花築之 夢。</br>
                 <p>價格: $390</p>
@@ -195,7 +195,7 @@
             </div>
             <div class="product">
                 <h2>摩天輪之戀花幻</h2>
-                <img src="../assets/images/IMG_3536.jpg">
+                <a href="product9.html"><img src="../assets/images/IMG_3536.jpg"></a>
                 <p>商品描述:</p>
                 <br>色澤柔和,花瓣如絲般 柔軟,帶給你溫暖和甜 蜜的感受。</br>
                 <p>價格: $299</p>

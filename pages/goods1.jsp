@@ -166,7 +166,7 @@
         <div class="row">
             <div class="product">
                 <h2>粉紫夢幻之愛</h2>
-                <img src="../assets/images/IMG_3531.jpg">
+                <a href="product1.html"><img src="../assets/images/IMG_3531.jpg"></a>
                 <p>商品描述: </p>
                 <br>散發著令人陶醉的淡淡花香，象徵著浪漫的愛情之夢。</br>
                 <p>價格: $490</p>
@@ -183,7 +183,7 @@
             </div>
             <div class="product">
                 <h2>炙熱戀情之花</h2>
-                <img src="../assets/images/IMG_3532.jpg">
+                <a href="product2.html"><img src="../assets/images/IMG_3532.jpg"></a>
                 <p>商品描述:</p>
                 <br>炙熱的戀情氛圍，花朵散發出濃烈的愛情氣息，讓人心馳神往。</br>
                 <p>價格: $390</p>
@@ -200,7 +200,7 @@
             </div>
             <div class="product">
                 <h2>純淨之愛花園</h2>
-                <img src="../assets/images/IMG_3533.jpg">
+                <a href="product3.html"><img src="../assets/images/IMG_3533.jpg"></a>
                 <p>商品描述:</p>
                 <br>結合了純淨和浪漫，如同一個迷人的愛情花園，為你帶來純淨無瑕的愛情寓意。</br>
                 <p>價格: $299</p>

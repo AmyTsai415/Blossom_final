@@ -122,7 +122,7 @@
     <div class="row">
         <div class="product">
             <h2>粉夢鬱金香</h2>
-            <img src="../assets/images/IMG_3528.jpg">
+            <a href="product4.html"><img src="../assets/images/IMG_3528.jpg"></a>
             <p>商品描述: </p>
             <br>這些粉色鬱金香如夢如 幻,綻放著溫柔的浪漫 氛圍。</br>
             <p>價格: $299</p>
@@ -139,7 +139,7 @@
         </div>
         <div class="product">
             <h2>純愛之白</h2>
-            <img src="../assets/images/IMG_3529.jpg">
+            <a href="product5.html"><img src="../assets/images/IMG_3529.jpg"></a>
             <p>商品描述:</p>
             <br>象徵著純潔和無私的愛 情,為你帶來一束永恆 的愛的寓意。</br>
             <p>價格: $790</p>
@@ -156,7 +156,7 @@
         </div>
         <div class="product">
             <h2>粉色柔情玫瑰</h2>
-            <img src="../assets/images/IMG_3530.jpg">
+            <a href="product6.html"><img src="../assets/images/IMG_3530.jpg"></a>
             <p>商品描述:</p>
             <br>色澤柔和,花瓣如絲般 柔軟,帶給你溫暖和甜 蜜的感受。</br>
             <p>價格: $590</p>
